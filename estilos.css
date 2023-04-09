@@ -1,6 +1,27 @@
+:root {
+    --ColorFontBody: #f3f3f3;
+
+    --ColorBackgroundCartao: rgba(0, 0, 0, 0.3);
+    --ColorBackgroundAHover: #A59ABC;
+
+    --ColorBorderTopCartao: #A59ABC;
+    --ColorBorderLeftCartao: #A59ABC;
+    --ColorBorderCartaoMinhasInforImg: #7960ad;
+
+    --ColorMinhasInforCargo: #f3f3f3;
+
+    --ColorAbasSelecionado: #7960ad;
+    --ColorInforAbas: #7960ad;
+    --ColorCartaoAbasAbaHover: #7960ad;
+
+    --ColorAHover: #fff;
+
+    --fontBody: 'Times New Roman', Times, serif;
+}
+
 body{
-    font-family:'Times New Roman', Times, serif;
-    color: #f3f3f3;
+    font-family: var(--fontBody);
+    color: var(--ColorFontBody);
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -22,10 +43,10 @@ video {
 
 .cartao{
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--ColorBackgroundCartao);
     width: 500px;
-    border-top: 1px solid #A59ABC;
-    border-left: 1px solid #A59ABC;
+    border-top: 1px solid var(--ColorBorderTopCartao);
+    border-left: 1px solid var(--ColorBorderLeftCartao);
     border-radius: 10px;
     overflow: hidden;
 
@@ -42,7 +63,7 @@ video {
 
 .cartao .minhas-informacoes img{
     border-radius: 50px;
-    border: 2px solid #7960ad;  
+    border: 2px solid var(--ColorBorderCartaoMinhasInforImg);
     width: 100px;  
 }
 
@@ -58,7 +79,7 @@ video {
 
 .cartao .minhas-informacoes .cargo{
     font-size: 20px;
-    color: #f3f3f3;
+    color: var(--ColorMinhasInforCargo)
 }
 
 #minhas-redes, #sobre-mim p {
@@ -88,15 +109,15 @@ video {
 }
 
 .cartao .abas .aba.selecionado{
-    background-color: #7960ad;
+    background-color: var(--ColorAbasSelecionado);
 }
 
 .cartao .informacoes-abas{
-    background-color: #7960ad;
+    background-color: var(--ColorInforAbas);
 }
 
 .cartao .abas .aba:hover{
-    background-color: #6546a8;
+    background-color: var(--ColorCartaoAbasAbaHover);
 }
 
 .informacoes-abas .informacao{
@@ -138,8 +159,8 @@ video {
 
   
 a:hover {
-    color: white;
-    background-color: #A59ABC;
+    color: var(--ColorAHover);
+    background-color: var(--ColorBackgroundAHover);
     padding: 10px;
     border-radius: 50px;
   }
